@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medical Student Orientation | Neighborhood Family Healthcare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Top Nav -->
+<nav class="top-nav" id="topNav">
+  <div class="nav-inner">
+    <a href="#" class="nav-brand">
+      <div class="nav-logo">N</div>
+      <div class="nav-brand-text">Neighborhood <span>Family Healthcare</span></div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#welcome">Welcome</a>
+      <a href="#emr">EMR</a>
+      <a href="#videos">Videos</a>
+      <a href="#halfsheet">Half Sheet</a>
+      <a href="#conduct">Conduct</a>
+      <a href="#focus">Focus</a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+</nav>
+
+<!-- Progress Bar -->
+<div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-badge"><span class="dot"></span> Medical Student Orientation</div>
+  <h1>Welcome to <em>NFH</em></h1>
+  <p>Your interactive guide to getting started at Neighborhood Family Healthcare. Everything you need to know — from our EMR system to professional expectations.</p>
+  <a href="#welcome" class="hero-cta">
+    Get Started
+    <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+  </a>
+</section>
+
+<!-- ========================================= -->
+<!-- Welcome & First Steps                     -->
+<!-- ========================================= -->
+<section class="section" id="welcome">
+  <div class="container fade-in">
+    <div class="section-label"><span class="icon">👋</span> Getting Started</div>
+    <h2>Welcome & First Steps</h2>
+    <p class="section-intro">Welcome to our family medicine practice! This workbook will guide you through your time here at Neighborhood Family Healthcare and help you make the most of this learning opportunity.</p>
+
+    <p style="font-size:15px; color:var(--navy-light); margin-bottom:20px;">On your first day, please introduce yourself to our team:</p>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">DY</div>
+        <div class="team-name">Dr. Yakoub</div>
+        <div class="team-role">Physician</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">S</div>
+        <div class="team-name">Sara</div>
+        <div class="team-role">Front Office</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">L</div>
+        <div class="team-name">Linda</div>
+        <div class="team-role">Medical Assistant</div>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">D</div>
+        <div class="team-name">Demo</div>
+        <div class="team-role">Medical IT</div>
+      </div>
+    </div>
+
+    <div class="callout callout-tip">
+      <div class="callout-icon">💡</div>
+      <div>Building a rapport with our staff will enhance your experience and help you understand how a medical office functions as a team.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================= -->
+<!-- EMR Sections                              -->
+<!-- ========================================= -->
+<section class="section" id="emr">
+  <div class="container fade-in">
+    <div class="section-label"><span class="icon">💻</span> Electronic Medical Records</div>
+    <h2>eClinicalWorks EMR System</h2>
+    <p class="section-intro">Our practice uses eClinicalWorks (eCW) as our electronic medical records system. Familiarity with this software will help you follow along during patient encounters and understand documentation workflows.</p>
+
+    <div class="accordion">
+
+      <!-- Office Visit Screen -->
+      <div class="accordion-item open">
+        <button class="accordion-header">
+          <span class="section-label" style="margin:0"><span class="icon">🏠</span></span>
+          Office Visit Screen
+          <span class="accordion-icon"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <p>This is the Office Visits screen — basically your <strong>Home Screen</strong>. It has all the relevant information like visit type, appointment time, reason for the visit, and what room the patient is in.</p>
+
+            <p><strong>Visit Statuses</strong></p>
+            <table class="status-table">
+              <thead><tr><th>Status</th><th>Meaning</th></tr></thead>
+              <tbody>
+                <tr><td><span class="status-badge badge-green">ARR</span></td><td>The patient has arrived / been checked in</td></tr>
+                <tr><td><span class="status-badge badge-blue">CHK</span></td><td>The patient has been checked out at the front desk</td></tr>
+                <tr><td><span class="status-badge badge-amber">PEN</span></td><td>The patient is pending / in the waiting room (not yet checked in)</td></tr>
+              </tbody>
+            </table>
+
+            <p><strong>Floor Status Workflow</strong></p>
+            <p>As a patient moves through their visit, the floor status updates to reflect where they are:</p>
+            <table class="status-table">
+              <thead><tr><th>Status</th><th>What It Means</th></tr></thead>
+              <tbody>
+                <tr><td><span class="status-badge badge-purple">NUR</span></td><td>Nurse/MA is currently with the patient (vitals, intake)</td></tr>
+                <tr><td><span class="status-badge badge-green">Ready</span></td><td>Patient is ready to be seen by the clinician</td></tr>
+                <tr><td><span class="status-badge badge-blue">SV</span></td><td>Start Visit — the clinician has begun seeing the patient</td></tr>
+                <tr><td><span class="status-badge badge-slate">Done</span></td><td>Clinician has finished with the patient</td></tr>
+              </tbody>
+            </table>
+
+            <div class="callout callout-tip">
+              <div class="callout-icon">💡</div>
+              <div><strong>S Jellybean:</strong> You can always return to the Office Visit Screen by clicking the "S" Jellybean (a small circle icon) in the top right corner. This is helpful when navigating between patient charts.</div>
+            </div>
+
+            <p>Double-click on a patient's name from this screen to enter their chart and progress note.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Note Screen -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="section-label" style="margin:0"><span class="icon">📝</span></span>
+          Progress Note Screen
+          <span class="accordion-icon"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <p>This is your progress note — the digital equivalent of the patient's paper chart for that appointment. This is where the clinician documents the HPI, vitals, diagnosis, and any treatment plan (labs, prescriptions, or referrals).</p>
+            <p><strong>How to Navigate:</strong> The progress note is organized into sections, each accessible by clicking <strong>blue hyperlinks</strong> on the left side of the screen:</p>
+            <ul>
+              <li>Chief Complaint / HPI (History of Present Illness)</li>
+              <li>Current Medications</li>
+              <li>Medical History & Allergies</li>
+              <li>Social History, Family History, Surgical History</li>
+              <li>Vitals</li>
+              <li>Examination</li>
+              <li>Assessment (Diagnoses)</li>
+              <li>Treatment (Orders & Plan)</li>
+              <li>Immunizations</li>
+            </ul>
+            <p>Once you open a section, you can navigate to other sections using the <strong>picture icons</strong> at the top of the screen. Hover over each icon to see which section it represents.</p>
+            <div class="callout callout-warn">
+              <div class="callout-icon">📋</div>
+              <div>Along with documenting electronically, you will also need to fill out a <strong>Half Sheet</strong>. See the Half Sheet section below for more information.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Patient Dashboard -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="section-label" style="margin:0"><span class="icon">📊</span></span>
+          Patient Dashboard
+          <span class="accordion-icon"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <p>When you open a patient's chart, the Patient Dashboard gives you a quick overview of their key information. Think of it as a <strong>summary hub</strong> before diving into the detailed progress note.</p>
+            <table class="status-table">
+              <thead><tr><th>Section</th><th>What It Contains</th></tr></thead>
+              <tbody>
+                <tr><td><strong>Encounters</strong></td><td>Past progress notes. Double-click any appointment to view it.</td></tr>
+                <tr><td><strong>Labs</strong></td><td>Lab orders and results. Paperclip icon = result received.</td></tr>
+                <tr><td><strong>DI</strong></td><td>Diagnostic Imaging orders and results. Same paperclip system.</td></tr>
+                <tr><td><strong>Patient Docs</strong></td><td>Scanned records: hospitalization, discharge, external results.</td></tr>
+                <tr><td><strong>Immunizations</strong></td><td>Vaccination history — what the patient has already received.</td></tr>
+                <tr><td><strong>Patient Language</strong></td><td>Shows if a translator is needed. Ask front office for an interpreter.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Chart Panel -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="section-label" style="margin:0"><span class="icon">📌</span></span>
+          Right Chart Panel
+          <span class="accordion-icon"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <p>On the right side of the progress note screen is the <strong>Right Chart Panel</strong> — one of the most efficient tools in eCW for quickly reviewing patient info without leaving the progress note. It has three tabs:</p>
+            <p><strong>Overview Tab</strong> — A snapshot of the patient's ongoing medical picture:</p>
+            <ul>
+              <li><strong>Problem List:</strong> Chronic conditions already diagnosed. Blue arrows move a diagnosis into today's note.</li>
+              <li><strong>Current Medications:</strong> Everything the patient is supposed to be taking.</li>
+              <li><strong>Allergies:</strong> Known drug and other allergies.</li>
+              <li><strong>Immunizations:</strong> Vaccination history (click + to expand).</li>
+              <li><strong>Therapeutic Injections:</strong> Ongoing injection therapies.</li>
+            </ul>
+            <p><strong>DRTLA Tab</strong> — Documents, Referrals, Telephone Encounters, Labs, and Actions:</p>
+            <ul>
+              <li>Lab orders and results — pink paperclips = electronic result received</li>
+              <li>Diagnostic Imaging orders and results</li>
+              <li>Referral history — click the reason to see specialty details</li>
+            </ul>
+            <p><strong>History Tab</strong> — All background histories in one place: Medical, GYN, Surgical, Family, and Social History.</p>
+            <div class="callout callout-tip">
+              <div class="callout-icon">⭐</div>
+              <div><strong>Pro tip:</strong> Glance at the Overview tab before the clinician enters the room to get quick context on the patient's conditions and medications.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Finding Test Results -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="section-label" style="margin:0"><span class="icon">🔍</span></span>
+          Finding Test Results
+          <span class="accordion-icon"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <p>Test results can be found in <strong>three places</strong> within eCW. If you're asked to locate a result, check them in this order:</p>
+            <table class="status-table">
+              <thead><tr><th>Location</th><th>What You'll Find</th><th>How to View</th></tr></thead>
+              <tbody>
+                <tr><td><strong>1. Labs</strong></td><td>In-house and external lab results</td><td>Click the paperclip icon</td></tr>
+                <tr><td><strong>2. DI</strong></td><td>X-rays, CT scans, MRIs, ultrasounds</td><td>Click paperclips (some may be in Patient Docs)</td></tr>
+                <tr><td><strong>3. Patient Docs</strong></td><td>Scanned: hospitalization, discharge, cardiology results</td><td>Click document under folder → view on right</td></tr>
+              </tbody>
+            </table>
+            <div class="callout callout-warn">
+              <div class="callout-icon">⚠️</div>
+              <div>You can access Labs, DI, and Patient Docs from the Patient Dashboard, the Patient Hub, or the DRTLA tab. If you can't find a result in one spot, try the others.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Charting Workflow -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="section-label" style="margin:0"><span class="icon">📋</span></span>
+          Charting Workflow Overview
+          <span class="accordion-icon"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <p>Understanding the typical charting workflow helps you follow along as the clinician documents during a patient encounter:</p>
+            <table class="workflow-table">
+              <thead><tr><th>#</th><th>Section</th><th>Who</th><th>Notes</th></tr></thead>
+              <tbody>
+                <tr><td><span class="step-num">1</span></td><td>Chief Complaint</td><td>Nurse/MA</td><td>Reason for the visit</td></tr>
+                <tr><td><span class="step-num">2</span></td><td>HPI</td><td>Nurse + Clinician</td><td>Nurse does initial interview; clinician adds clinical HPI</td></tr>
+                <tr><td><span class="step-num">3</span></td><td>Current Medications</td><td>Clinician reviews</td><td>Nurse does medication reconciliation first</td></tr>
+                <tr><td><span class="step-num">4</span></td><td>Medical Hx & Allergies</td><td>Clinician reviews</td><td>Review and revise as needed</td></tr>
+                <tr><td><span class="step-num">5</span></td><td>GYN / Surgical / Hosp Hx</td><td>Clinician reviews</td><td>New patients only</td></tr>
+                <tr><td><span class="step-num">6</span></td><td>Family History</td><td>Clinician reviews</td><td>New patients only</td></tr>
+                <tr><td><span class="step-num">7</span></td><td>Social History</td><td>Clinician reviews</td><td>General + Tobacco/Alcohol/Drugs</td></tr>
+                <tr><td><span class="step-num">8</span></td><td>Vitals</td><td>Nurse/MA</td><td>Clinician reviews</td></tr>
+                <tr><td><span class="step-num">9</span></td><td>Examination</td><td>Clinician</td><td>Physical exam findings</td></tr>
+                <tr><td><span class="step-num">10</span></td><td>Assessment</td><td>Clinician</td><td>ICD-10 diagnosis codes</td></tr>
+                <tr><td><span class="step-num">11</span></td><td>Treatment</td><td>Clinician</td><td>Meds, labs, imaging, referrals</td></tr>
+                <tr><td><span class="step-num">12</span></td><td>Immunizations</td><td>Clinician orders</td><td>Nurse/MA administers</td></tr>
+                <tr><td><span class="step-num">13</span></td><td>Follow-Up</td><td>Clinician</td><td>When the patient should return</td></tr>
+              </tbody>
+            </table>
+            <div class="callout callout-tip">
+              <div class="callout-icon">👁️</div>
+              <div><strong>As an observer:</strong> Following this workflow on screen while the clinician works is one of the best ways to learn how clinical documentation ties together.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HPI, Review & Revise, Exam -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="section-label" style="margin:0"><span class="icon">🩺</span></span>
+          HPI, Review & Revise, Examination
+          <span class="accordion-icon"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <p><strong>HPI (History of Present Illness)</strong></p>
+            <p>This is where the clinician documents the patient's reason for the visit in their own clinical words:</p>
+            <ul>
+              <li><strong>Notes Box:</strong> Click "Notes" next to a complaint to open a free-text box — this is the "Subjective" of the SOAP note.</li>
+              <li><strong>Structured Data:</strong> Some HPI questions have drop-down menus for standardized answers, plus free-text alongside.</li>
+              <li><strong>Clinician HPI:</strong> If no mini-template appears, the clinician navigates to "Clinician HPI" on the left for additional questions.</li>
+            </ul>
+            <p><strong>Review & Revise Sections</strong></p>
+            <p>The nurse/MA completes these before the clinician sees the patient. The clinician reviews and revises as needed:</p>
+            <ul>
+              <li>Current Medication (nurse does reconciliation first)</li>
+              <li>Medical History & Allergies (mark NKDA if applicable)</li>
+              <li>GYN History (female patients — via blue hyperlink)</li>
+              <li>Surgical & Hospitalization History</li>
+              <li>Family History</li>
+              <li>Social History — two folders: General, and Tobacco/Alcohol/Drugs</li>
+              <li>Vitals — recorded by nurse/MA, reviewed by clinician</li>
+            </ul>
+            <p><strong>Examination</strong></p>
+            <ul>
+              <li><strong>Green Arrows:</strong> Click to populate the default "normal" observation — speeds up documentation for unremarkable findings.</li>
+              <li><strong>Free-Text:</strong> Click into the Observation field to type custom notes for abnormal or notable findings.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Assessments & Treatment -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="section-label" style="margin:0"><span class="icon">🏥</span></span>
+          Assessments & Treatment Overview
+          <span class="accordion-icon"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <p><strong>Assessments (Diagnoses)</strong></p>
+            <p>Every treatment order must be linked to a diagnosis. The Assessment screen is where ICD-10 codes are entered:</p>
+            <ul>
+              <li><strong>Previous Assessments:</strong> Click to see diagnoses from prior visits. Single-click to select.</li>
+              <li><strong>Problem List:</strong> Pull diagnoses from the patient's chronic conditions list.</li>
+              <li><strong>New Diagnosis:</strong> Check "Use ICD10", type the name or code, and hit Enter. Blue diagnoses can be clicked to narrow down.</li>
+            </ul>
+            <div class="callout callout-tip">
+              <div class="callout-icon">📚</div>
+              <div><strong>What is ICD-10?</strong> The international coding system for classifying diagnoses. Every condition has a unique code (e.g., E11.9 = Type 2 Diabetes). Essential for billing, tracking, and treatment planning.</div>
+            </div>
+            <p><strong>Treatment Screen</strong></p>
+            <p>The central hub for managing the patient's treatment plan. From here the clinician can write clinical notes, order medications, order labs, order diagnostic imaging, and make referrals to specialists.</p>
+            <div class="callout callout-warn">
+              <div class="callout-icon">⚠️</div>
+              <div><strong>Key Concept:</strong> Every order and note on the Treatment screen is tied to a specific diagnosis tab. The clinician must select the correct assessment tab before writing notes or placing orders.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Immunizations & Patient Lookup -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span class="section-label" style="margin:0"><span class="icon">💉</span></span>
+          Immunizations & Patient Lookup
+          <span class="accordion-icon"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg></span>
+        </button>
+        <div class="accordion-body">
+          <div class="accordion-body-inner">
+            <p><strong>Immunizations</strong> follow a two-step process:</p>
+            <ul>
+              <li><strong>Step 1 — Check History:</strong> Click "Immunization" on the Patient Dashboard to view vaccination history.</li>
+              <li><strong>Step 2 — Order:</strong> Orders are placed from the "Immunizations" link under the "Plan" section of the progress note.</li>
+            </ul>
+            <div class="callout callout-alert">
+              <div class="callout-icon">🚫</div>
+              <div>Do <strong>NOT</strong> order immunizations from the Patient Dashboard — that screen is for viewing history only. Orders must come from the Plan section.</div>
+            </div>
+            <p><strong>Patient Lookup (Sherlock)</strong></p>
+            <p>To look up any patient outside of the appointment schedule:</p>
+            <ul>
+              <li>Click the magnifying glass / Sherlock icon in the top navigation</li>
+              <li>Search by "last name, first name" or by date of birth</li>
+              <li>This opens the Patient Hub with access to labs, DI, referrals, Patient Docs, immunizations, and more</li>
+            </ul>
+            <div class="callout callout-tip">
+              <div class="callout-icon">🔎</div>
+              <div><strong>When to use Sherlock:</strong> When you need to pull up a patient not on today's schedule, or want the Patient Hub for a broader look at records.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /accordion -->
+  </div>
+</section>
+
+<!-- ========================================= -->
+<!-- Video Training                            -->
+<!-- ========================================= -->
+<section class="section" id="videos" style="background: linear-gradient(180deg, var(--teal-50) 0%, var(--warm) 100%);">
+  <div class="container fade-in">
+    <div class="section-label"><span class="icon">🎬</span> Video Training</div>
+    <h2>eClinicalWorks Training Videos</h2>
+    <p class="section-intro">Watch these training videos to build your familiarity with eClinicalWorks before and during your rotation. The playlist covers navigation, charting, and key workflows.</p>
+
+    <div class="video-section">
+      <div class="video-section-header">
+        <div class="play-icon">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div>
+          <h3>eClinicalWorks Training Playlist</h3>
+          <p>Complete video series — click through each video in the playlist</p>
+        </div>
+      </div>
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/videoseries?list=PL9ixrgnugD1_pyfdbnhh_TtpDW2pYT2YN"
+          title="eClinicalWorks Training Playlist"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================= -->
+<!-- Half Sheet                                -->
+<!-- ========================================= -->
+<section class="section" id="halfsheet">
+  <div class="container fade-in">
+    <div class="section-label"><span class="icon">📄</span> Patient Checkout</div>
+    <h2>Half Sheet</h2>
+    <p class="section-intro">The half sheet is a physical form used alongside electronic documentation to ensure smooth patient checkout and follow-up coordination.</p>
+
+    <div class="halfsheet-grid">
+      <div class="conduct-card" style="border-left: 4px solid var(--slate-light);">
+        <h3><span class="badge-icon" style="background:#F1F5F9;">📥</span> Left Side (Linda fills out)</h3>
+        <p style="font-size:14.5px; color:var(--slate);">Contains the patient information you'll need to know.</p>
+      </div>
+      <div class="conduct-card" style="border-left: 4px solid var(--teal);">
+        <h3><span class="badge-icon" style="background:var(--teal-50);">✏️</span> Right Side (You fill out)</h3>
+        <div class="checklist">
+          <div class="checklist-item"><div class="check-box"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div><span>Diagnosis (Dx)</span></div>
+          <div class="checklist-item"><div class="check-box"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div><span>Follow-up reason</span></div>
+          <div class="checklist-item"><div class="check-box"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div><span>Labs</span></div>
+          <div class="checklist-item"><div class="check-box"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div><span>Referrals</span></div>
+          <div class="checklist-item"><div class="check-box"><svg fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg></div><span>Next appointment</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout callout-warn">
+      <div class="callout-icon">⚠️</div>
+      <div>This is critical so the patient can be checked out properly and all labs/referrals have been handed to the patient before they leave.</div>
+    </div>
+
+    <h3 style="font-size:17px; font-weight:600; margin: 28px 0 16px;">Half Sheet Workflow</h3>
+    <div class="flow-steps">
+      <div class="flow-step">
+        <div class="flow-step-marker">1</div>
+        <div class="flow-step-content">
+          <h4>If there are labs</h4>
+          <p>Hand the half sheet to Linda so she can put the lab orders in. Once you have the printed labs, take the half sheet to Sara to schedule the next appointment.</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-marker">2</div>
+        <div class="flow-step-content">
+          <h4>If there are referrals</h4>
+          <p>Hand the half sheet to Linda or Sara.</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-step-marker">3</div>
+        <div class="flow-step-content">
+          <h4>After checkout</h4>
+          <p>Once the patient has been checked out, place the half sheet into the tray.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================= -->
+<!-- Professional Conduct                      -->
+<!-- ========================================= -->
+<section class="section" id="conduct">
+  <div class="container fade-in">
+    <div class="section-label"><span class="icon">👔</span> Expectations</div>
+    <h2>Professional Conduct</h2>
+
+    <div class="conduct-grid">
+      <div class="conduct-card prep" style="border-left: 4px solid var(--teal);">
+        <h3><span class="badge-icon" style="background:var(--teal-50);">✅</span> Professionalism & Preparedness</h3>
+        <ul>
+          <li>Arrive 30 minutes early to each session</li>
+          <li>Dress in business-casual attire appropriate for a medical setting</li>
+          <li>Bring a notebook for learning purposes — do not record patient identifiers</li>
+          <li>Maintain strict patient confidentiality at all times (HIPAA compliance)</li>
+        </ul>
+      </div>
+      <div class="conduct-card interact" style="border-left: 4px solid #8B5CF6;">
+        <h3><span class="badge-icon" style="background:#EDE9FE;">🤝</span> Patient Interaction</h3>
+        <ul>
+          <li>Introduce yourself to patients as a medical student</li>
+          <li>Clearly explain your role and ask permission to observe</li>
+          <li>Respect the patient's right to refuse having a student present</li>
+          <li>Be prepared to step out during sensitive examinations</li>
+          <li>Act as a passive observer, not a provider</li>
+        </ul>
+      </div>
+      <div class="conduct-card etiquette" style="border-left: 4px solid var(--amber);">
+        <h3><span class="badge-icon" style="background:#FEF3C7;">🎯</span> Etiquette</h3>
+        <ul>
+          <li>Do not use your phone in front of patients</li>
+          <li>Avoid interrupting conversations between physician and patient</li>
+          <li>Save questions for appropriate moments during downtime</li>
+          <li>Discuss any advice for the patient with Dr. Yakoub before giving it so the doctor is aware</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================= -->
+<!-- Observation Focus & Guidelines            -->
+<!-- ========================================= -->
+<section class="section" id="focus">
+  <div class="container fade-in">
+    <div class="section-label"><span class="icon">👁️</span> Learning Objectives</div>
+    <h2>Observation Focus</h2>
+    <p class="section-intro">During your time here, pay close attention to these key aspects of family medicine practice:</p>
+
+    <div class="focus-grid">
+      <div class="conduct-card" style="border-top: 4px solid var(--teal);">
+        <h3 style="font-size:15px;">🩺 Doctor-Patient Relationship</h3>
+        <p style="font-size:14px; color:var(--slate); line-height:1.7;">Observe how the physician builds rapport, communicates complex information, and establishes trust with patients across diverse backgrounds and health literacy levels.</p>
+      </div>
+      <div class="conduct-card" style="border-top: 4px solid #8B5CF6;">
+        <h3 style="font-size:15px;">🧩 Managing Complex Needs</h3>
+        <p style="font-size:14px; color:var(--slate); line-height:1.7;">Notice how the physician prioritizes and addresses multiple concerns within a single visit, balancing acute issues with chronic disease management and preventive care.</p>
+      </div>
+      <div class="conduct-card" style="border-top: 4px solid var(--amber);">
+        <h3 style="font-size:15px;">🔗 Coordination of Care</h3>
+        <p style="font-size:14px; color:var(--slate); line-height:1.7;">Watch how care is coordinated between the physician, medical assistant, front office, specialists, and other healthcare team members.</p>
+      </div>
+    </div>
+
+    <h3 style="font-size:20px; font-family:'Playfair Display',serif; margin: 40px 0 16px; color:var(--navy);">Important Guidelines</h3>
+
+    <div class="donot-list">
+      <div class="donot-item"><span class="x-icon">✕</span> Do not provide medical advice to patients under any circumstances</div>
+      <div class="donot-item"><span class="x-icon">✕</span> Do not perform any procedures unless explicitly instructed by the physician</div>
+      <div class="donot-item"><span class="x-icon">✕</span> Do not discuss patient information outside of the clinical setting</div>
+      <div class="donot-item"><span class="x-icon">✕</span> Do not record, photograph, or copy any patient information</div>
+    </div>
+
+    <div class="callout callout-tip" style="margin-top: 20px;">
+      <div class="callout-icon">🎒</div>
+      <div><strong>Your belongings:</strong> You can place your personal belongings in Dr. Yakoub's backroom office.</div>
+    </div>
+
+    <div class="callout callout-alert" style="margin-top: 12px;">
+      <div class="callout-icon">🔒</div>
+      <div><strong>HIPAA Reminder:</strong> Maintain strict confidentiality of ALL patient information. HIPAA violations carry serious legal and professional consequences. When in doubt, do not share or discuss patient details.</div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-brand">Neighborhood Family Healthcare</div>
+  <p>Medical Student Orientation Workbook</p>
+  <div class="footer-links">
+    <a href="https://neighborhoodfamilyhealth.com">neighborhoodfamilyhealth.com</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
