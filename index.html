@@ -574,6 +574,63 @@
   </div>
 </section>
 
+<!-- Paste this right BEFORE your <footer> tag in index.html -->
+
+<section id="feedback" class="content-section">
+  <div class="section-anchor"></div>
+  <div class="section-label"><span>💬</span> Feedback</div>
+  <h2 class="section-title">Help Us Improve</h2>
+  <p style="color: var(--slate); font-size: 16px; max-width: 640px; margin-bottom: 32px;">
+    Have suggestions for this orientation guide? We'd love to hear your thoughts so we can make it even better for future students.
+  </p>
+
+  <div class="feedback-card">
+    <div class="feedback-field">
+      <label for="fb-name">Your Name</label>
+      <input type="text" id="fb-name" placeholder="First and last name">
+    </div>
+
+    <div class="feedback-field">
+      <label for="fb-role">Your Role</label>
+      <select id="fb-role">
+        <option value="" disabled selected>Select your role</option>
+        <option value="Medical Student">Medical Student</option>
+        <option value="Pre-Med Student">Pre-Med Student</option>
+        <option value="Staff Member">Staff Member</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="feedback-field">
+      <label for="fb-type">Feedback Type</label>
+      <select id="fb-type">
+        <option value="" disabled selected>What kind of feedback?</option>
+        <option value="Suggestion">Suggestion for improvement</option>
+        <option value="Content Error">Content error or correction</option>
+        <option value="Missing Info">Something is missing</option>
+        <option value="General Comment">General comment</option>
+      </select>
+    </div>
+
+    <div class="feedback-field">
+      <label for="fb-message">Your Comments</label>
+      <textarea id="fb-message" rows="5" placeholder="Tell us what you think — what worked well, what could be improved, or what you'd like to see added..."></textarea>
+    </div>
+
+    <button class="feedback-btn" onclick="sendFeedback()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+        <polyline points="22,6 12,13 2,6"/>
+      </svg>
+      Send Feedback
+    </button>
+
+    <p class="feedback-note">
+      This will open your email app with your comments pre-filled. Just hit send!
+    </p>
+  </div>
+</section>
+  
 <!-- Footer -->
 <footer class="site-footer">
   <div class="footer-brand">Neighborhood Family Healthcare</div>
