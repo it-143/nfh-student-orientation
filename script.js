@@ -123,7 +123,7 @@ function sendFeedback() {
   body += `\n${message}`;
 
   // ⚠️ CHANGE THIS to your actual email address
-  const email = 'your-email@example.com';
+  const email = 'it@neighborhoodfamilyhealth.com';
 
   window.location.href = `mailto:${email}?subject=${subject}&body=${encodeURIComponent(body)}`;
 }
