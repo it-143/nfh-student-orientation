@@ -97,3 +97,33 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
 
 });
+
+// ===== FEEDBACK FORM =====
+// Paste this at the bottom of your script.js file
+
+function sendFeedback() {
+  const name = document.getElementById('fb-name').value.trim();
+  const role = document.getElementById('fb-role').value;
+  const type = document.getElementById('fb-type').value;
+  const message = document.getElementById('fb-message').value.trim();
+
+  if (!message) {
+    alert('Please enter your comments before sending.');
+    return;
+  }
+
+  const subject = encodeURIComponent(
+    `[NFH Orientation Feedback] ${type || 'General'} — from ${name || 'Anonymous'}`
+  );
+
+  let body = '';
+  if (name) body += `Name: ${name}\n`;
+  if (role) body += `Role: ${role}\n`;
+  if (type) body += `Feedback Type: ${type}\n`;
+  body += `\n${message}`;
+
+  // ⚠️ CHANGE THIS to your actual email address
+  const email = 'your-email@example.com';
+
+  window.location.href = `mailto:${email}?subject=${subject}&body=${encodeURIComponent(body)}`;
+}
